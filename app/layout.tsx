@@ -1,3 +1,4 @@
+import RegisterModal from './components/Modals/RegisterModal'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <RegisterModal/>
         <Navbar/>
         {children}
         <Footer/>
