@@ -1,7 +1,9 @@
+import RegisterModal from './components/Modals/RegisterModal'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
+import ToasterProvider from './providers/ToasterProvider'
 
 const inter = Nunito({ subsets: ['latin'] })
 
@@ -18,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ToasterProvider/>
+        <RegisterModal/>
         <Navbar/>
         {children}
         <Footer/>
