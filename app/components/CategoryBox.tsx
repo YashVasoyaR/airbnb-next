@@ -12,7 +12,6 @@ interface CategoryBoxProps {
 const CategoryBox: React.FC<CategoryBoxProps> = ({
   label,
   icon: Icon,
-  description,
   selected,
 }) => {
   const router = useRouter();
