@@ -96,7 +96,8 @@ const RentModal = () => {
         setStep(STEPS.CATEGORY);
         rentModal.onClose();
       })
-      .catch(() => {
+      .catch((err) => {
+        console.log('err :>> ', err);
         toast.error("Something went wrong.");
       })
       .finally(() => {
