@@ -7,7 +7,6 @@ const formattedCountries = countries.map((country) => ({
   latlng: country.latlng,
   region: country.region,
 }));
-console.log("formattedCountries :>> ", formattedCountries);
 const useCountries = () => {
   const getAll = () => formattedCountries;
 
